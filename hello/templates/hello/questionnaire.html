@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form action="/">
+       <h1>Please answer the following questions</h1>
+
+
+<!-- implementing a timer to record time taken to fill out questionnaire -->
+Start Time: {{start_time}}
+<input type="hidden" id="end_time" name="end_time">
+
+
+
+      <form>
+         <label for="Name of the site">Please enter the name of the site:</label>
+  <input type="text" id="Name of the site" name="Name of the site"><br><br>
+
+       <label for="city">Site Type:</label>
+  <select id="city" name="city">
+    <option value="Text">Text</option>
+    <option value="Information Search Database">Information Search Database</option>
+    <option value="Video">Video</option>
+    <option value="Simulation">Simulation</option>
+      <option value="Other">Other</option>
+
+  </select><br><br>
+
+<label for="options">The content producer:</label>
+<select id="options" name="options">
+  <option value="1">Government body (e.g. ministry of health, CDC, FDA, NASA)</option>
+  <option value="2">NGO (Non Governmental Organizations)</option>
+  <option value="3">Research organizations (e.g. CERN)</option>
+  <option value="4">International organizations (e.g. WHO, UN, UNESCO)</option>
+  <option value="5">Higher education\Academic institution (e.g. university \college)</option>
+  <option value="6">Internet site for formal schooling\ K-12 education system</option>
+  <option value="7">Informal science education and popular science (e.g.  science museum, Scientific American)</option>
+  <option value="8">Scientific Journals (e.g. Science, Nature) or Google Scholar</option>
+  <option value="9">Medical site (e.g. health insurance provider, hospital)</option>
+  <option value="10">Encyclopedia or dictionary (e.g. Wikipedia, Oxford dictionary)</option>
+  <option value="11">Media and communication (e.g. news sites)</option>
+  <option value="12">Commercial / Economic (e.g. pharmaceutical companies)</option>
+  <option value="13">Satire site</option>
+  <option value="14">Social media site (e.g. Twitter, Facebook, LinkedIn etc.)</option>
+  <option value="15">Fact checkers site</option>
+  <option value="16">others</option>
+</select><br><br>
+
+       <p class="question">Is there free access to the website?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+        </div><br><br>
+
+
+      <label for="options">How recent are the information?</label>
+<select id="options" name="options">
+  <option value="1">Not mentioned</option>
+  <option value="2">Over 10 years</option>
+  <option value="3">5 to 10 years</option>
+  <option value="4">Rather new (1 to 5 years)</option>
+</select><br><br>
+
+
+      <label for="options">What is the author background?</label>
+<select id="options" name="options">
+  <option value="1">The Author is not mentioned</option>
+  <option value="2">The author is mentioned but there is no information about their background, or their background is not relevant</option>
+  <option value="3">The author has relevant expertise to the content</option>
+</select><br><br>
+
+
+<p class="question">Is a scientific background (high school or above) required to understand the information?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+        </div><br><br>
+
+
+      <p class="question"> Are there any scientific terms that lay people do not understand? </p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+            <label><input type="radio" value="none" name="visited" /> irrelevant</label>
+        </div><br><br>
+
+
+      <p class="question"> If you answered No to the previous question,
+      you may proceed to the next question. If you answered Yes,
+      please answer: Are there any explanations for the scientific terms? </p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+        </div><br><br>
+
+
+      <p class="question"> Is a scientific background (high school or above)
+          required to understand the information?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+        </div><br><br>
+
+      <p class="question"> Are there major scientific errors in the link?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> There are no major scientific errors in the content</label>
+          <label><input type="radio" value="none" name="visited" /> There are major scientific errors in the content (if so give an example)</label>
+            <label><input type="radio" value="none" name="visited" /> Irrelevant</label>
+        </div><br><br>
+
+
+      <div class="question-answer">
+  <p>How confident are you in the answer you have provided?</p>
+  <select id="options" name="options">
+    <option value="5">Very Sure</option>
+    <option value="4">Sure</option>
+    <option value="3">Neither unsure nor sure</option>
+    <option value="2">Unsure</option>
+    <option value="1">Not at all</option>
+  </select>
+</div><br><br>
+
+
+ <div class="question-answer">
+  <p> How accurate is the scientific content presented in the link?</p>
+  <select id="options" name="options">  <option value="3">Accurate</option>
+  <option value="2">Neither</option>
+  <option value="1">Inaccurate</option>
+  <option value="0">Irrelevant</option>
+</select><br><br>
+
+
+     <div class="question-answer">
+  <p> How sure are you regarding the accuracy?</p>
+  <select id="options" name="options">  <option value="4">Very Sure</option>
+  <option value="3">Sure</option>
+  <option value="2">Neither unsure nor sure</option>
+  <option value="1">Unsure</option>
+  <option value="0">Not at all</option>
+
+</select><br><br>
+
+
+     <p class="question"> Are the following sources available in the link? (mark all that apply)</p>
+<label for="None of the below">None of the below</label>
+<input type="checkbox" id="None of the below" name="options" value="1"> <br><br>
+<label for="Others">Others</label>
+<input type="checkbox" id="Others" name="options" value="2"><br><br>
+<label for="Place to leave comments\ ask questions">Place to leave comments\ ask questions</label>
+<input type="checkbox" id="Place to leave comments\ ask questions" name="options" value="3"><br><br>
+<label for="Graphs">Graphs</label>
+<input type="checkbox" id="Graphs" name="options" value="4"><br><br>
+<label for="Relevant multimedia (e.g. pictures, video, animation etc.)">Relevant multimedia (e.g. pictures, video, animation etc.)</label>
+<input type="checkbox" id="Relevant multimedia (e.g. pictures, video, animation etc.)" name="options" value="5"><br><br>
+<label for="Hyper-links">Hyper-links</label>
+<input type="checkbox" id="Hyper-links" name="options" value="6"><br><br>
+<label for="Numerical data">Numerical data</label>
+<input type="checkbox" id="Numerical data" name="options" value="7"><br><br>
+<label for="List of sources">List of sources</label>
+<input type="checkbox" id="List of sources" name="options" value="8"><br><br>
+<label for="Citation or references to relevant literature">Citation or references to relevant literature</label>
+<input type="checkbox" id="Citation or references to relevant literature" name="options" value="9"><br><br>
+<br><br>
+<br><br>
+
+
+
+     <p class="question">Is there reference to everyday life?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+            <label><input type="radio" value="none" name="visited" /> irrelevant</label>
+        </div><br><br>
+
+
+
+
+<p class="question">Are there local examples in the content?
+     (e.g. relevant case study in a country or ethnic group that speaks the language of the content)</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+            <label><input type="radio" value="none" name="visited" /> irrelevant</label>
+        </div><br><br>
+
+
+     <p class="question">Does the content present advantages and disadvantages or risks and contributions?</p>
+        <div class="question-answer">
+          <label><input type="radio" value="none" name="visited" /> yes</label>
+          <label><input type="radio" value="none" name="visited" /> no</label>
+            <label><input type="radio" value="none" name="visited" /> irrelevant</label>
+        </div><br><br>
+
+
+
+    <p class="question">Does the content reject or reinforce the discussed conspiracy theory?</p>
+<label for="options">Select an option:</label>
+<select id="options" name="options">
+  <option value="3">The content rejects the conspiracy</option>
+  <option value="2">Not sure</option>
+  <option value="1">The content reinforces the conspiracy</option>
+  <option value="0">Irrelevant</option>
+</select>
+
+     <p class="question">Is malicious meaning is alluded to in the text ("We are being tricked")?</p>
+<label for="options">Select an option:</label>
+<select id="options" name="options">
+  <option value="3">No</option>
+  <option value="2">Not sure</option>
+  <option value="1">Yes</option>
+  <option value="0">Irrelevant</option>
+</select>
+
+
+
+<p class="question">Do claims contradict accepted scientific explanations?</p>
+<label for="options">Select an option:</label>
+<select id="options" name="options">
+  <option value="3">No</option>
+  <option value="2">Not sure</option>
+  <option value="1">Yes</option>
+  <option value="0">Irrelevant</option>
+</select>
+
+
+
+<p class="question">Are specific groups in society (pharma, Jews, Muslims etc.),
+     institutions or governments are presented as the enemy?</p>
+<label for="options">Select an option:</label>
+<select id="options" name="options">
+  <option value="3">No</option>
+  <option value="2">Not sure</option>
+  <option value="1">Yes</option>
+  <option value="0">Irrelevant</option>
+</select>
+
+
+
+        </form>
+</body>
+</html>
