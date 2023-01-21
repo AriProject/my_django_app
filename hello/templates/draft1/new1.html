@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -11,10 +13,13 @@
 
       <form>
          <label for="Name of the site">Please enter the name of the site:</label>
-  <input type="text" id="Name of the site" name="Name of the site"><br><br>
+  <input type="text" id="Name of the site" name="Name of the site" placeholder="Name of site"
+        required><br><br>
+
 
        <label for="city">Site Type:</label>
-  <select id="city" name="city">
+
+  <select id="city" name="city" >
     <option value="Text">Text</option>
     <option value="Information Search Database">Information Search Database</option>
     <option value="Video">Video</option>
@@ -138,26 +143,63 @@
 </select><br>
 
 
-     <p class="question"> Are the following sources available in the link? (mark all that apply)</p>
-<label for="None of the below">None of the below</label>
-<input type="checkbox" id="None of the below" name="options" value="1"> <br><br>
-<label for="Others">Others</label>
-<input type="checkbox" id="Others" name="options" value="2"><br><br>
-<label for="Place to leave comments\ ask questions">Place to leave comments\ ask questions</label>
-<input type="checkbox" id="Place to leave comments\ ask questions" name="options" value="3"><br><br>
-<label for="Graphs">Graphs</label>
-<input type="checkbox" id="Graphs" name="options" value="4"><br><br>
-<label for="Relevant multimedia (e.g. pictures, video, animation etc.)">Relevant multimedia (e.g. pictures, video, animation etc.)</label>
-<input type="checkbox" id="Relevant multimedia (e.g. pictures, video, animation etc.)" name="options" value="5"><br><br>
-<label for="Hyper-links">Hyper-links</label>
-<input type="checkbox" id="Hyper-links" name="options" value="6"><br><br>
-<label for="Numerical data">Numerical data</label>
-<input type="checkbox" id="Numerical data" name="options" value="7"><br><br>
-<label for="List of sources">List of sources</label>
-<input type="checkbox" id="List of sources" name="options" value="8"><br><br>
-<label for="Citation or references to relevant literature">Citation or references to relevant literature</label>
-<input type="checkbox" id="Citation or references to relevant literature" name="options" value="9"><br><br>
-<br><br>
+<div class="form-group">
+  <p class="question">Are the following sources available in the link? (mark all that apply)</p>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="None of the below" name="options" value="1">
+        None of the below
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Place to leave comments ask questions" name="options" value="3">
+        Place to leave comments/ask questions
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Graphs" name="options" value="4">
+        Graphs
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Relevant multimedia" name="options" value="5">
+        Relevant multimedia (e.g. pictures, video, animation etc.)
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Hyper-links" name="options" value="6">
+        Hyper-links
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Numerical data" name="options" value="7">
+        Numerical data
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="List of sources" name="options" value="8">
+        List of sources
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Citation or references" name="options" value="9">
+        Citation or references to relevant literature
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label d-flex">
+        <input type="checkbox" class="form-check-input" id="Other" name="options" value="2">
+        Others
+      </label>
+    </div>
+</div>
 
 
 
@@ -234,9 +276,7 @@
 
 
 <div class="form-group">
-      <button type="submit" id="submit" class="submit-button">
-        Submit
-      </button>
+        <input type="submit" value="Submit">
     </div>
 
         </form>

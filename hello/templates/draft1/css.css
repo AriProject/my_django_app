@@ -1,0 +1,70 @@
+/* Form container */
+form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px;
+  border: none;
+  background-color: #fafafa;
+  box-shadow: 0 0 30px 0 #ccc;
+  border-radius: 20px;
+  /* Remove text-align property to align left */
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 18px;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+/* Form input fields hover effect */
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: #4CAF50;
+}
+
+/* Form labels */
+label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+/* Form submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Form submit button hover effect */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Form message */
+.form-message {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #4CAF50;
+  display: none;
+}
